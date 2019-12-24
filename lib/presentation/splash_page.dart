@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_email_auth/presentation/login_page.dart';
+import 'package:flutter_firebase_email_auth/presentation/phone.dart';
 import 'package:flutter_firebase_email_auth/presentation/signup_page.dart';
 
 class SplashPage extends StatelessWidget {
@@ -25,6 +26,16 @@ class SplashPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => SignupPage()));
+              },
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            RaisedButton(
+              child: Text("Sign IN Using Phone Number"),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Phone()));
               },
             )
           ],
