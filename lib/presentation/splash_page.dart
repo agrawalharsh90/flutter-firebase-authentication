@@ -32,7 +32,7 @@ class SplashPage extends StatelessWidget {
               height: 50,
             ),
             RaisedButton(
-              child: Text("Sign IN Using Phone Number"),
+              child: Text("Log IN Using Phone Number"),
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Phone()));
